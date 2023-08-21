@@ -7,13 +7,11 @@ const personalMovieDB ={
     genres:[],
     privat: false
 };
+for(let i = 0; i < 2; i++){
+    const  a = prompt("Один з нещодвно переглянутих фільмів?" , " "),
+           b = prompt("На скільки оціните його ?" , " ");
 
-const  a = prompt("Один з нещодвно переглянутих фільмів?" , " ");
-const  b = prompt("На скільки оціните його ?" , " ");
-const  c = prompt("Один з нещодвно переглянутих фільмів?" , " ");
-const  d = prompt("На скільки оціните його ?" , " ");
-
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] =d;
+           personalMovieDB.movies[a] = b;
+}
 
 console.log(personalMovieDB);
